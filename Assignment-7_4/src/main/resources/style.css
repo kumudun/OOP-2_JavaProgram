@@ -1,0 +1,35 @@
+/* Global readable sans-serif font */
+.root {
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 14px;
+}
+
+/* Title */
+.app-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+/* Buttons and inputs */
+.button {
+    -fx-padding: 8px 14px;
+}
+
+.text-field, .choice-box {
+    -fx-pref-height: 34px;
+}
+
+/* Error message styling */
+.error {
+    -fx-text-fill: #b00020; /* accessible error red */
+    -fx-font-weight: bold;
+}
+
+/* Optional: make main area breathe a bit */
+.grid-pane {
+    -fx-background-color: #fafafa;
+    -fx-background-radius: 8px;
+    -fx-padding: 16px;
+    -fx-border-color: #e6e6e6;
+    -fx-border-radius: 8px;
+}

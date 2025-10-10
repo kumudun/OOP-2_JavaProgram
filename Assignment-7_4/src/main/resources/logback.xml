@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- Hibernate logging level -->
+    <logger name="org.hibernate" level="INFO"/>
+
+    <!-- JPA / SQL log formatting -->
+    <logger name="org.hibernate.SQL" level="INFO"/>
+    <logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="TRACE"/>
+
+    <!-- Optional: reduce noise -->
+    <logger name="com.zaxxer.hikari" level="WARN"/>
+    <logger name="org.hibernate.engine.jdbc.spi.SqlExceptionHelper" level="WARN"/>
+
+    <!-- Console appender -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %-5level [%thread] %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
